@@ -1,0 +1,430 @@
+/* Общие стили (из первого блока стилей - главенствующие) */
+body {
+    
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: #1d3557;
+}
+
+/* Стили для шапки */
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    margin-left: 70px; 
+}
+.header .logo-container {
+    display: flex;
+    align-items: center;
+}
+.header .logo-container img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+.header .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.2;
+}
+.header .menu {
+    display: flex;
+  
+    gap: 20px;
+}
+.header a {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+
+/* Стили для блока hero (из первого блока стилей - главенствующие) */
+.hero {
+    background: url('храм.png') center/cover no-repeat;
+    color: white;
+    text-align: left;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 33, 87, 0.7);
+}
+
+.hero-overlay {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 70px;
+}
+
+.hero-overlay h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 60px;
+    line-height: 0.4;
+}
+.hero-overlay3 {
+    display: flex;
+    align-items: flex-start;
+}
+.hero-overlay3 p {
+    
+    margin-left: 35px;
+    font-weight: 600;
+    padding: 0px 10px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+.hero-overlay4 {
+    display: flex;
+    align-items: flex-start;
+}
+.hero-overlay4 p {
+    
+    margin-left: 35px;
+    font-weight: 600;
+    padding: 0px 10px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+.hero-overlay3 img{
+    width: 30px;
+    height: 60px;
+    margin-left: 20 px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Кнопка (из первого блока стилей - главенствующие) */
+.btn {
+    display: inline-block;
+    background: #002157;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Стили для контента (из первого блока стилей - главенствующие) */
+.content {
+    padding: 50px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', serif;
+    font-weight: 300;
+    margin-left: 70px;
+}
+
+.content div {
+    width: 45%;
+}
+
+.content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 40px;
+    padding-left: 80px;
+    background: url('spoon.png') no-repeat left center;
+    background-size: 64px;
+    line-height: 3.5;
+}
+/* Стили для футера (из первого блока стилей - главенствующие) */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 20px 50px;
+    background: white;
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+.footer-text {
+    font-size: 18px;
+    max-width: 600px;
+    text-align: left;
+    padding-left: 0;
+}
+
+.footer-logo {
+    margin-left: 110px;
+    
+}
+
+.footer-logo img {
+    width: auto;
+    height: 80;
+}
+
+/* Стили для вступительного текста (из первого блока стилей - главенствующие) */
+.section-intro {
+    padding: 40px 50px 10px;
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    color: #002157;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+/*  Стили каталога  */
+.catalog {
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Изменено на space-between для равномерного распределения */
+}
+
+.product {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 15px;
+    width: calc(30% - 40px); /* Ширина карточки остается прежней */
+}
+
+.product img {
+    width: 100%; /* Задает ширину изображения в 100% от контейнера */
+    height: 200px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезает изображение, чтобы сохранить пропорции */
+    border-radius: 5px; /* Закругление углов */
+}
+
+.price {
+    font-weight: bold;
+}
+
+.btn { /* переопределен выше  */
+    /* background-color: #457b9d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease; */
+}
+
+.btn:hover {
+    background-color: #1d3557;
+}
+
+.text-block {
+    display: flex;
+    align-items: center; /* Это выравнивает элементы по центру вертикально */
+    margin: 30px 0;
+}
+
+.text-block img {
+    width: 20px;
+    height: 40px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    align-self: center; /* Дополнительное выравнивание по центру */
+}
+
+.text-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Выравнивание текста по центру */
+}
+
+.consultation-block {
+    display: flex;
+    align-items: flex-start; /* Выравниваем по верхнему краю */
+    margin-top: 30px;
+}
+
+.consult-btn {
+    background: #002157;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    flex-shrink: 0; /* Фиксированная ширина кнопки */
+    width: auto; /* Ширина по содержимому */
+    display: inline-block;
+}
+
+.consult-text {
+    margin-left: 20px; /* Отступ от кнопки */
+    width: calc(100% - 200px); /* Ширина текстового блока */
+    min-width: 200px; /* Минимальная ширина */
+    max-width: 300px; /* Максимальная ширина */
+}
+
+.consult-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+    margin: 0;
+    word-wrap: break-word; /* Перенос длинных слов */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+    .consultation-block {
+        flex-direction: column;
+    }
+    .consult-text {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+
+/* Футер */
+.footer2 {
+    background-color: #001f54; /* Темно-синий фон */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.consult-btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+.scroll-to-top-btn {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: 20px; /* Расположение кнопки внизу */
+    right: 20px;  /* Расположение кнопки справа */
+    background-color: #1E3A66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: none; /* Скрыта по умолчанию */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #457b9d;
+}
+
+
+
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000; /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Полупрозрачный фон */
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #fff;
+    color:#000;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Увеличение кнопки консультации при наведении */
+.consult-btn:hover {
+    transform: scale(1.1); /* Увеличение */
+    transition: transform 0.3s ease;
+}
+
+/* Стили для полей формы */
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для кнопки отправить */
+.modal-content button {
+    background-color: #002157;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #00153a;
+}
+

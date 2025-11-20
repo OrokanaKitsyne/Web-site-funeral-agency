@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ритуальные услуги "Последний путь"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Логотип">
+            <div class="logo-text">
+                <span>РИТУАЛЬНАЯ СЛУЖБА</span>
+                <span>ООО "ПОСЛЕДНИЙ ПУТЬ"</span>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="Похороны.html">Похороны</a>
+            <a href="Кремация.html">Кремация</a>
+            <a href="Гробы.html">Гробы</a>
+            <a href="Венки.html">Венки</a>
+            <a href="Урны.html">Урны</a>
+            <span style="display: inline-block; width: 30px;"></span>
+            8(932)555 33 11
+        </div>
+    </div>
+
+    
+    <div class="hero">
+        <div class="hero-overlay">
+        <h2>КРЕМАЦИЯ: ДОСТОЙНОЕ ПРОЩАНИЕ</h2>
+        <p>"Поможем провести Кремацию близкого Вам человека, в кратчайшие сроки и удобное для Вас время, по официальным тарифам."</p>
+        </div>
+    </div>
+
+    
+    
+    <div class="section-intro">
+        Мы организуем кремацию с уважением и заботой
+    </div>
+
+    <div class="content">
+        <div>
+            <h3>Услуги кремации</h3>
+            <ul>
+                <li>Стандартная процедура кремации</li>
+                <li>Экспресс-кремация в срочном порядке</li>
+                <li>Организация прощальной церемонии</li>
+                <li>Транспортировка в крематорий</li>
+                <li>Получение и хранение урны с прахом</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Преимущества кремации</h3>
+            <ul>
+                <li>Экологически безопасный процесс</li>
+                <li>Возможность последующего захоронения урны</li>
+                <li>Размещение урны в колумбарии</li>
+                <li>Сохранение памяти в семейном склепе</li>
+                <li>Альтернатива традиционному захоронению</li>
+            </ul>
+        </div>
+    </div>
+
+ 
+    <div class="consultation-container">
+        <div class="text-block">
+            <div class="text-content">
+                <p>Кремация – это современный и цивилизованный способ прощания,<br> который выбирают многие семьи в трудный момент.</p>
+            </div>
+        </div>
+        <div class="consultation-block">
+            <a href="#" class="consult-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+            <div id="consultationModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Запись на консультацию</h3>
+                  <form>
+                    <input type="text" placeholder="Ваше имя" required><br>
+                    <input type="tel" placeholder="Ваш телефон" required><br>
+                    <button type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+            <div class="consult-text">
+                <p>Позвоните нам, чтобы узнать все детали организации кремации.<br> Мы доступны 24 часа в сутки для помощи вашей семье.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑ Наверх</button>
+    <script>
+
+        // Получаем кнопку
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+    // Когда пользователь прокручивает страницу
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block"; // Показываем кнопку
+        } else {
+            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
+        }
+    };
+    
+    // При клике на кнопку прокручиваем страницу наверх
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Плавная прокрутка
+        });
+    });   
+    </script>
+  
+
+
+
+
+  
+<script>
+    const consultBtn = document.querySelector('.consult-btn');
+    const popup = document.getElementById('consultation-popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    consultBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // чтобы не срабатывала ссылка
+        popup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+
+
+  <script>
+    const modal = document.getElementById('consultationModal');
+    const btn = document.querySelector('.consult-btn');
+    const span = document.querySelector('.close');
+
+    btn.onclick = function(e) {
+        e.preventDefault(); // отменяем переход по ссылке
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+    <footer class="footer2">
+        <p>© 2025 Ритуальная служба "Последний путь". Адрес: г. Москва, ул. Примерная, д.1. Все права защищены.</p>
+    </footer>
+</body>
+</html>

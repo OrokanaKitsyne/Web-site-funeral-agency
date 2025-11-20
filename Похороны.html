@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ритуальные услуги "Последний путь"</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Prata&family=Russo+One&family=Tenor+Sans&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Comfortaa:wght@300..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poiret+One&family=Prata&family=Russo+One&family=Space+Grotesk:wght@300..700&family=Tenor+Sans&family=Yanone+Kaffeesatz:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Логотип">
+            <div class="logo-text">
+                <span>РИТУАЛЬНАЯ СЛУЖБА</span>
+                <span>ООО "ПОСЛЕДНИЙ ПУТЬ"</span>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="Похороны.html">Похороны</a>
+            <a href="Кремация.html">Кремация</a>
+            <a href="Гробы.html">Гробы</a>
+            <a href="Венки.html">Венки</a>
+            <a href="Урны.html">Урны</a>
+            <span style="display: inline-block; width: 30px;"></span>
+            8(932)555 33 11
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-overlay">
+            <p>ПОХОРОННЫЕ УСЛУГИ И ЮРИДИЧЕСКАЯ ПОДДЕРЖКА</p>
+            <div class="hero-overlay2">
+                <h2>Ритуальные услуги</h2>
+                <h2>Последний путь</h2>
+            </div>
+            
+            <p>Расставание с близкими без стресса</p>
+            
+            <div class="text-block">
+                <img src="Rectangle 289 (1).png" alt="Декоративный элемент" class="decor-image">
+                <div class="text-content">
+                    <p>В трудный момент – мы рядом.<br>
+                    С пониманием и уважением организуем прощание,<br>
+                    достойное памяти близкого человека.</p>
+                </div>
+            </div>
+            
+            <div class="consultation-block">
+                <a href="#" class="consult-btn">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</a>
+                <div class="consult-text">
+                    <p>Позвоните нам, и мы ответим на все ваши вопросы. Мы поможем вам сориентироваться и принять взвешенное решение.</p>
+                </div>
+            </div>
+
+            <div id="consultationModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h3>Запись на консультацию</h3>
+                  <form>
+                    <input type="text" placeholder="Ваше имя" required><br>
+                    <input type="tel" placeholder="Ваш телефон" required><br>
+                    <button type="submit">Отправить</button>
+                  </form>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="section-intro">
+        Мы знаем, как тяжело терять близких.
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            Организация похорон – это не только скорбь, но и необходимость решения юридических вопросов. Мы поможем вам оформить все необходимые документы.
+        </div>
+        
+        <div class="footer-logo">
+
+           
+           
+        </div>
+    </div>
+
+    <div class="content">
+        <div>
+            <h3>Профессиональная организация похорон</h3>
+            <ul>
+                <li>Помощь в получении свидетельства о смерти</li>
+                <li>Оформление пособия на погребение</li>
+                <li>Юридическая консультация по вопросам наследства</li>
+                <li>Транспортировка тела по городу, области, России</li>
+                <li>Индивидуальный подход</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Позвоните нам сейчас</h3>
+            <ul>
+                <li>Опыт организации похорон любой сложности</li>
+                <li>Квалифицированные сотрудники</li>
+                <li>Официальный представитель</li>
+                <li>Полный комплекс услуг</li>
+                <li>Круглосуточная поддержка</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑ Наверх</button>
+    <script>
+
+        // Получаем кнопку
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    
+    // Когда пользователь прокручивает страницу
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block"; // Показываем кнопку
+        } else {
+            scrollToTopBtn.style.display = "none"; // Скрываем кнопку
+        }
+    };
+    
+    // При клике на кнопку прокручиваем страницу наверх
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Плавная прокрутка
+        });
+    });
+    
+    </script>
+
+
+
+<script>
+    const consultBtn = document.querySelector('.consult-btn');
+    const popup = document.getElementById('consultation-popup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    consultBtn.addEventListener('click', (e) => {
+        e.preventDefault(); // чтобы не срабатывала ссылка
+        popup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+</script>
+
+<script>
+    const modal = document.getElementById('consultationModal');
+    const btn = document.querySelector('.consult-btn');
+    const span = document.querySelector('.close');
+
+    btn.onclick = function(e) {
+        e.preventDefault(); // отменяем переход по ссылке
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+
+    <!-- Футер -->
+    <footer class="footer2">
+        <p>© 2025 Ритуальная служба "Последний путь". Адрес: г. Москва, ул. Примерная, д.1. Все права защищены.</p>
+    </footer>
+
+
+    
+</body>
+</html>

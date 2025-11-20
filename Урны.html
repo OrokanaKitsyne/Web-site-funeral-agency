@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ритуальные услуги "Последний путь"</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="logo.png" alt="Логотип">
+            <div class="logo-text">
+                <span>РИТУАЛЬНАЯ СЛУЖБА</span>
+                <span>ООО "ПОСЛЕДНИЙ ПУТЬ"</span>
+            </div>
+        </div>
+        <div class="menu">
+            <a href="Похороны.html">Похороны</a>
+            <a href="Кремация.html">Кремация</a>
+            <a href="Гробы.html">Гробы</a>
+            <a href="Венки.html">Венки</a>
+            <a href="Урны.html">Урны</a>
+            <span style="display: inline-block; width: 30px;"></span>
+            8(932)555 33 11
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-overlay">
+        <h2>УРНЫ ДЛЯ ПРАХА: ДОСТОИНСТВО ПАМЯТИ</h2>
+        <p>"Элегантные и благородные изделия для сохранения светлой памяти о близких"</p>
+        </div>
+    </div>
+
+    <div class="catalog">
+    <div class="catalog-container">
+        <aside class="sidebar">
+            <h2>Фильтр</h2>
+            <div class="filter-group">
+                <h3>Материал</h3>
+                <label><input type="checkbox"> Керамика</label><br>
+                <label><input type="checkbox"> Металл</label><br>
+                <label><input type="checkbox"> Дерево</label><br>
+            </div>
+            <div class="filter-group">
+                <h3>Цвет</h3>
+                <label><input type="checkbox"> Белый</label><br>
+                <label><input type="checkbox"> Черный</label><br>
+                <label><input type="checkbox"> Золотой</label><br>
+                <label><input type="checkbox"> Серебристый</label><br>
+            </div>
+            <div class="filter-group">
+                <h3>Цена</h3>
+                <label for="min-price-range">Минимальная цена:</label>
+                <input type="range" id="min-price-range" min="0" max="15000" step="500" value="0">
+                <span id="min-price">0</span> руб
+        
+                <br>
+        
+                <label for="max-price-range">Максимальная цена:</label>
+                <input type="range" id="max-price-range" min="0" max="15000" step="500" value="15000">
+                <span id="max-price">15000</span> руб
+            </div>
+        </aside>
+        
+        <div class="catalog-items"> 
+
+        <!-- Карточки товаров -->
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn1.png" alt="Урна Белая">
+            </div>
+            <div class="item-info">
+                <h3>WHITE MEMORY</h3>
+                <p>Цвет: Белый, Материал: Керамика</p>
+                <span>7500 ₽</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn2.png" alt="Урна Черная">
+            </div>
+            <div class="item-info">
+                <h3>BLACK ETERNITY</h3>
+                <p>Цвет: Черный, Материал: Металл</p>
+                <span>9000 ₽</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn3.png" alt="Урна Золотая">
+            </div>
+            <div class="item-info">
+                <h3>GOLDEN PEACE</h3>
+                <p>Цвет: Золотой, Материал: Металл</p>
+                <span>12000 ₽</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn4.png" alt="Урна Серебряная">
+            </div>
+            <div class="item-info">
+                <h3>SILVER LIGHT</h3>
+                <p>Цвет: Серебристый, Материал: Металл</p>
+                <span>11000 ₽</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn5.png" alt="Урна Деревянная">
+            </div>
+            <div class="item-info">
+                <h3>WOODEN SERENITY</h3>
+                <p>Цвет: Натуральный, Материал: Дерево</p>
+                <span>8000 ₽</span>
+            </div>
+        </div>
+
+        <div class="item-card">
+            <div class="item-image">
+                <img src="urn6.png" alt="Урна Элегантная">
+            </div>
+            <div class="item-info">
+                <h3>CLASSIC GRACE</h3>
+                <p>Цвет: Черный, Материал: Керамика</p>
+                <span>9500 ₽</span>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <button id="scrollToTopBtn" class="scroll-to-top-btn">↑ Наверх</button>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const minPriceRange = document.getElementById('min-price-range');
+        const maxPriceRange = document.getElementById('max-price-range');
+        const minPriceText = document.getElementById('min-price');
+        const maxPriceText = document.getElementById('max-price');
+
+        minPriceRange.addEventListener('input', function() {
+            minPriceText.textContent = minPriceRange.value;
+        });
+
+        maxPriceRange.addEventListener('input', function() {
+            maxPriceText.textContent = maxPriceRange.value;
+        });
+    });
+
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    };
+
+    scrollToTopBtn.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    </script>
+
+</body>
+</html>

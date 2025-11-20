@@ -1,0 +1,241 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #1d3557;
+}
+
+/* Стили для шапки */
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    margin-left: 70px;
+}
+.header .logo-container {
+    display: flex;
+    align-items: center;
+}
+.header .logo-container img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+}
+.header .logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.2;
+}
+.header .menu {
+    display: flex;
+    gap: 20px;
+}
+.header a {
+    text-decoration: none;
+    color: #1d3557;
+}
+
+/* Стили для блока hero */
+.hero {
+    background: url('храм.png') center/cover no-repeat;
+    color: white;
+    text-align: left;
+    padding: 60px 30px;
+    position: relative;
+    
+}
+.hero-overlay {
+    position: relative;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 600px;
+    margin: 0;
+    margin-left: 70px;
+}
+.hero h2 {
+    margin-left: 60px;
+
+}
+
+.hero p {
+    margin-left: 60px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 33, 87, 0.7);
+}
+
+/* Контент */
+.section-intro {
+    text-align: center;
+    margin: 40px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 20px;
+}
+
+.content div {
+    max-width: 400px;
+}
+
+.content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.content ul {
+    list-style: disc inside;
+    padding-left: 0;
+}
+
+/* Консультация */
+.consultation-container {
+    margin: 50px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.consultation-block .consult-btn {
+    background-color: #1d3557;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.consult-text p {
+    font-size: 16px;
+    color: #1d3557;
+}
+
+
+
+
+
+.scroll-to-top-btn {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    bottom: 20px; /* Расположение кнопки внизу */
+    right: 20px;  /* Расположение кнопки справа */
+    background-color: #1E3A66;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: none; /* Скрыта по умолчанию */
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: #457b9d;
+}
+
+
+
+
+
+/* Футер */
+.footer2 {
+    background-color: #001f54; /* Темно-синий фон */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1000; /* Поверх всего */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Полупрозрачный фон */
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #fff;
+    color:#000;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Кнопка закрытия */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Увеличение кнопки консультации при наведении */
+.consult-btn:hover {
+    transform: scale(1.1); /* Увеличение */
+    transition: transform 0.3s ease;
+}
+
+/* Стили для полей формы */
+.modal-content input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Стили для кнопки отправить */
+.modal-content button {
+    background-color: #002157;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.modal-content button:hover {
+    background-color: #00153a;
+}
